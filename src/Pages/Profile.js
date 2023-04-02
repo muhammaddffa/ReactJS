@@ -1,6 +1,7 @@
 import React from "react"
 import { useNavigate } from "react-router-dom"
 
+
 const Profile = () => {
 
     const navigate = useNavigate()
@@ -9,8 +10,10 @@ const Profile = () => {
         <div>
             <h3>CEK HALAMAN PROFILE</h3>
             <button onClick={() => navigate(-1)}>
-                Balik Halaman HOME
+                Kembali Halaman HOME
             </button>
+            
+
         </div>
     )
 }

@@ -6,7 +6,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // import Count from './Views/Count';
 import Home from './container/Home';
 // import StopWatch from './Views/StopWatch';
-import Profile from './Pages/Profile';
+import Profile from './Pages/Profile'
+
 
 function App() {
   return (
@@ -19,8 +20,9 @@ function App() {
       <StopWatch /> */}
       <Router>
         <Routes>
-          <Route path='/' element = {<Home/>}/>
+          <Route exact path='/' element = {<Home/>}/>
           <Route path='/Profile' element = {<Profile/>} />
+          
         </Routes>
       </Router>
     </div>
